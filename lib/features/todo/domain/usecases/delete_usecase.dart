@@ -10,8 +10,8 @@ class DeleteTodoUsecase implements Usecase<Todo, Params<Todo>>{
   DeleteTodoUsecase({required this.repository});
 
   @override
-  Future<Either<Failure, Todo>> call(Params<Todo> todo) async{
-    return await repository.deleteTodo(todo.data);
+  Future<Either<Failure, Todo>> call(Params<Todo> params) async{
+    return await repository.deleteTodo(params.data);
   }
 
 }

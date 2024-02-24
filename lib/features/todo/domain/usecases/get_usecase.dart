@@ -4,13 +4,14 @@ import 'package:cp_1/features/todo/domain/entities/todo.dart';
 import 'package:cp_1/features/todo/domain/repositories/todo_repository.dart';
 import 'package:dartz/dartz.dart';
 
-class AddTodoUsecase implements Usecase<Todo, Params<Todo>>{
+class GetAllTodeUsecase implements Usecase<List<Todo>, NoParams> {
   final TodoRepository repository;
 
-  AddTodoUsecase({required this.repository});
-
+  GetAllTodeUsecase({required this.repository});
   @override
-  Future<Either<Failure,Todo>> call(Params<Todo> params)async  {
-    return await repository.addTodo(params.data);
+  Future<Either<Failure, List<Todo>>> call(NoParams params) async{
+    return await repository.getAllTodes();
   }
+ 
+
 }

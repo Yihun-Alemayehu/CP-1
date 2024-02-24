@@ -10,3 +10,9 @@ class Params<T> {
 
   Params({required this.data});
 }
+
+class NoParams {
+  final void data;
+
+  NoParams({required this.data});
+}
