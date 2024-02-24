@@ -1,15 +1,17 @@
+import 'package:cp_1/core/error/failure.dart';
 import 'package:cp_1/features/todo/domain/entities/todo.dart';
+import 'package:dartz/dartz.dart';
 
 abstract class TodoRepository {
   // add todo:
-  Future<Todo> addTodo(Todo todo);
+  Future<Either<Failure,Todo>> addTodo(Todo todo);
 
   // edit todo:
-  Future<Todo> editTodo(Todo todo);
+ Future<Either<Failure,Todo>> editTodo(Todo todo);
 
   // delete todo:
-  Future<Todo> deleteTodo(Todo todo);
+ Future<Either<Failure,Todo>> deleteTodo(Todo todo);
 
   // get all todos:
-  Future<List<Todo>> getAllTodes();
+  Future<Either<Failure,List<Todo>>> getAllTodes();
 }
