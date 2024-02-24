@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "542176913757",
+    "project_id": "todo-clean-arch-1f8bc",
+    "storage_bucket": "todo-clean-arch-1f8bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542176913757:android:92fb299dec9f9ee12060b4",
+        "android_client_info": {
+          "package_name": "com.example.cp_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtGxvqv4dvp9WckVMdrG4qOoswYkymKx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
